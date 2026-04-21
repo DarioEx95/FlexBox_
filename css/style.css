@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex; /*Activar FlexBox*/
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e6e5e6;
+}
+
+nav img{
+    width: 100px; /*Tamaño del logo*/
+}
+
+nav a{
+    font-size: 20px; /*Tamaño del texto*/
+    text-decoration: none; /*Grososr del texto*/
+
+    padding: 16px; /*Espacoio dentro del enlace*/
+    transition: 0.7s;
+    color: black;
+    border-radius: 15px;
+}
+
+nav a:hover{
+    background-color: rgba(0, 57, 114, 0.747);
+    transition: 0.7s;
+    color: white;
+}
+
+.Servicios{
+    display: flex;
+    justify-content: space-evenly; /*Alineacion horizontal*/
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.Servicios img{
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column; /*Para ordenar los elementos en vertical*/
+    align-items: center;
+    gap: 8px;
+    margin: 10px;
+    
+}
+
+@media (width < 550px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
